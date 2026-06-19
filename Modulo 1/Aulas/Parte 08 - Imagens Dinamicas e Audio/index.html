@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+</head>
+<body>
+   <h1>Imagens Dinamicas</h1>
+   <p>Tente abrir esse site em vários dispositivos diferentes ou <br> simplesmente aumente o tamanh do seu navegador</p> 
+
+   <picture>
+        <source media="(max-width:760px)" srcset="imagens/ImagemPequena.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="Imagens/ImagemMedia.png" type="image/png">
+        <img src="/imagens/ImagemGrande.png" alt="Imagem Flexivel">
+   </picture>
+
+j   <h1>Reproduzindo Audio</h1>
+   <p>Para reproduzir audio fazemos o seguinte: </p>
+   <audio preload="metadata" autoplay controls lopp>
+    <source src="/audio/Toccata in D minor (by Bach) - Bach.mp3" type="audio/mpeg">
+    <source src="/audio/Toccata in D minor (by Bach) - Bach.mp3" type="audio/ogg">
+    <!--Não recomendado usar ficheiros .wav-->
+    <source src="/audio/Toccata in D minor (by Bach) - Bach.mp3" type="audio/wav">
+    <p>Infelizmente o navegador não consegue reproduzir audio <a href="/audio/Toccata in D minor (by Bach) - Bach.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+   </audio>
+</body>
+</html>
