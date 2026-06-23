@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body { 
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        td.num {
+            text-align: right;
+        }
+
+         caption  {
+            font-size: 1.5em ;
+            font-weight: bold;
+            padding: 20px ;
+            background-color: lightgray;
+         }
+
+         /* odd (impar) -> even (par)-> 2n */
+         tbody > tr:nth-child(odd) { /* 2n*/
+            background-color: yellow;
+            
+         }
+
+         tbody > tr:nth-child(even)  { /* 2n-1*/
+            background-color: lightgray;
+            
+         }
+
+         p {
+            text-indent: 1%;
+         }
+
+
+    </style>
+</head>
+<body>
+    <!--Anatomia de tabels grabdes
+        Table 
+        Caption
+            Thead
+                TR, TD, TH
+            TBODY
+                TR,TD,TH
+            TFOOT
+                TR, TD, TH
+
+       dado -> td
+       titulo -> th 
+    -->
+
+
+    <table>
+        <caption>População em portugal 2026</caption>
+        <thead>
+            <tr>
+                /* mostram o resultado em colunas*/
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+               <td>Lisboa</td> 
+                <td class="num">596,952</td>
+            </tr>
+
+            <tr>
+                <td>Sintra</td>
+                <td class="num">410,420</td>
+            </tr>
+
+            <tr> 
+                <td>Porto</td>
+                <td class="num">264,493</td>
+            </tr>
+
+            <tr> 
+                <td>Cascais</td>
+                <td class="num">228,079</td>
+            </tr>
+
+            <tr> 
+                <td>Loures</td>
+                <td class="num">214,856</td>
+            </tr>
+
+            <tr> 
+                <td>Braga</td>
+                <td class="num">209,328</td>
+            </tr>
+
+            <tr> 
+                <td>Amadora</td>
+                <td class="num">187,541</td>
+            </tr>
+
+            <tr> 
+                <td>Almada</td>
+                <td class="num">187,519</td>
+            </tr>
+
+            <tr> 
+                <td>Matosinhos</td>
+                <td class="num">185,501</td>
+            </tr>
+
+            <tr> 
+                <td>Seixal</td>
+                <td class="num">183,000</td>
+            </tr>
+
+            <tr> 
+                <td>Oeiras</td>
+                <td class="num">181,965</td>
+            </tr>
+
+            <tr> 
+                <td>Gondomar</td>
+                <td class="num">171,928</td>
+            </tr>
+
+            <tr> 
+                <td>Odivelas</td>
+                <td class="num">161,278</td>
+            </tr>
+
+            <tr> 
+                <td>Guimarães</td>
+                <td class="num">156,587</td>
+            </tr>
+
+            <tr> 
+                <td>Coimbra</td>
+                <td class="num">150,409</td>
+            </tr>
+
+             <tr> 
+                <td>Maia</td>
+                <td class="num">149,556</td>
+            </tr>
+
+             <tr> 
+                <td>Santa Maria da Feira</td>
+                <td class="num">142,787</td>
+            </tr>
+
+             <tr> 
+                <td>Leiria</td>
+                <td class="num">140,182</td>
+            </tr>
+
+             <tr> 
+                <td>Vila nova de famalicao</td>
+                <td class="num">138,490</td>
+            </tr>
+
+             <tr> 
+                <td>Setubal</td>
+                <td class="num">125,129</td>
+            </tr>
+
+             <tr> 
+                <td>Barcelos</td>
+                <td class="num">«117,213</td>
+            </tr>
+
+             <tr> 
+                <td>Funchal</td>
+                <td class="num">109,293</td>
+            </tr>
+
+             <tr> 
+                <td>Viseu</td>
+                <td class="num">104,838</td>
+            </tr>
+
+             <tr> 
+                <td>Valongo</td>
+                <td class="num">104,838</td>
+            </tr>
+
+             <tr> 
+                <td>Mafra</td>
+                <td class="num">93,466</td>
+            </tr>
+             <tr> 
+                <td>Torres Vedras</td>
+                <td class="num">92,806</td>
+            </tr>
+             <tr> 
+                <td>Aveiro</td>
+                <td class="num">92,155</td>
+            </tr>
+             <tr> 
+                <td>Vila do conde</td>
+                <td class="num">88,510</td>
+            </tr>
+             <tr> 
+                <td>Paredes</td>
+                <td class="num">93,466</td>
+            </tr>
+             <tr> 
+                <td>Barreiro</td>
+                <td class="num">82,822</td>
+            </tr>
+             <tr> 
+                <td>Loule</td>
+                <td class="num">78,066</td>
+            </tr> <tr> 
+                <td>Palmela</td>
+                <td class="num">77,376</td>
+            </tr>
+             <tr> 
+                <td>Moita</td>
+                <td class="num">72,737/td>
+            </tr>
+             <tr> 
+                <td>Faro</td>
+                <td class="num">71,996</td>
+            </tr>
+             <tr> 
+                <td>Penafiel</td>
+                <td class="num">70,817</td>
+            </tr>
+            <tr> 
+                <td>Amarante</td>
+                <td class="num">52,267</td>
+            </tr>
+            
+            
+        </tbody>
+        <tfoot>
+            <tr>
+                /* o resultado e formado em linhas*/
+                <th scope="row">Total de Habitantes</th>
+                <td class="num">3,489,856</td> 
+            </tr>
+        </tfoot>
+    </table>
+    
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur unde autem repellendus, optio similique ex fugit, culpa laboriosam inventore animi laudantium blanditiis quasi, nobis cupiditate quisquam enim. Ex, quidem harum! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, neque distinctio veritatis qui doloremque necessitatibus illo maxime! Aliquam expedita minus ad dolorum, error quos a in iure veniam cupiditate velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet corporis fugit, animi amet qui a nemo ipsam? Accusamus maxime eaque blanditiis iste ea accusantium, nemo ex deleniti veritatis aliquam velit! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem labore ducimus neque cupiditate totam. Nobis ut, iure nostrum enim corrupti culpa repellat est totam architecto reiciendis tenetur laudantium, corporis fuga! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum nostrum unde nulla magni delectus. In quidem recusandae maiores reprehenderit odio nesciunt ducimus, sunt repellendus consequatur quam velit, pariatur sed repudiandae?</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur unde autem repellendus, optio similique ex fugit, culpa laboriosam inventore animi laudantium blanditiis quasi, nobis cupiditate quisquam enim. Ex, quidem harum! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, neque distinctio veritatis qui doloremque necessitatibus illo maxime! Aliquam expedita minus ad dolorum, error quos a in iure veniam cupiditate velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet corporis fugit, animi amet qui a nemo ipsam? Accusamus maxime eaque blanditiis iste ea accusantium, nemo ex deleniti veritatis aliquam velit! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem labore ducimus neque cupiditate totam. Nobis ut, iure nostrum enim corrupti culpa repellat est totam architecto reiciendis tenetur laudantium, corporis fuga! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum nostrum unde nulla magni delectus. In quidem recusandae maiores reprehenderit odio nesciunt ducimus, sunt repellendus consequatur quam velit, pariatur sed repudiandae?</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur unde autem repellendus, optio similique ex fugit, culpa laboriosam inventore animi laudantium blanditiis quasi, nobis cupiditate quisquam enim. Ex, quidem harum! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, neque distinctio veritatis qui doloremque necessitatibus illo maxime! Aliquam expedita minus ad dolorum, error quos a in iure veniam cupiditate velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet corporis fugit, animi amet qui a nemo ipsam? Accusamus maxime eaque blanditiis iste ea accusantium, nemo ex deleniti veritatis aliquam velit! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem labore ducimus neque cupiditate totam. Nobis ut, iure nostrum enim corrupti culpa repellat est totam architecto reiciendis tenetur laudantium, corporis fuga! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum nostrum unde nulla magni delectus. In quidem recusandae maiores reprehenderit odio nesciunt ducimus, sunt repellendus consequatur quam velit, pariatur sed repudiandae?</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur unde autem repellendus, optio similique ex fugit, culpa laboriosam inventore animi laudantium blanditiis quasi, nobis cupiditate quisquam enim. Ex, quidem harum! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, neque distinctio veritatis qui doloremque necessitatibus illo maxime! Aliquam expedita minus ad dolorum, error quos a in iure veniam cupiditate velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet corporis fugit, animi amet qui a nemo ipsam? Accusamus maxime eaque blanditiis iste ea accusantium, nemo ex deleniti veritatis aliquam velit! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem labore ducimus neque cupiditate totam. Nobis ut, iure nostrum enim corrupti culpa repellat est totam architecto reiciendis tenetur laudantium, corporis fuga! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum nostrum unde nulla magni delectus. In quidem recusandae maiores reprehenderit odio nesciunt ducimus, sunt repellendus consequatur quam velit, pariatur sed repudiandae?</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur unde autem repellendus, optio similique ex fugit, culpa laboriosam inventore animi laudantium blanditiis quasi, nobis cupiditate quisquam enim. Ex, quidem harum! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, neque distinctio veritatis qui doloremque necessitatibus illo maxime! Aliquam expedita minus ad dolorum, error quos a in iure veniam cupiditate velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet corporis fugit, animi amet qui a nemo ipsam? Accusamus maxime eaque blanditiis iste ea accusantium, nemo ex deleniti veritatis aliquam velit! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem labore ducimus neque cupiditate totam. Nobis ut, iure nostrum enim corrupti culpa repellat est totam architecto reiciendis tenetur laudantium, corporis fuga! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum nostrum unde nulla magni delectus. In quidem recusandae maiores reprehenderit odio nesciunt ducimus, sunt repellendus consequatur quam velit, pariatur sed repudiandae?</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur unde autem repellendus, optio similique ex fugit, culpa laboriosam inventore animi laudantium blanditiis quasi, nobis cupiditate quisquam enim. Ex, quidem harum! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, neque distinctio veritatis qui doloremque necessitatibus illo maxime! Aliquam expedita minus ad dolorum, error quos a in iure veniam cupiditate velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet corporis fugit, animi amet qui a nemo ipsam? Accusamus maxime eaque blanditiis iste ea accusantium, nemo ex deleniti veritatis aliquam velit! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem labore ducimus neque cupiditate totam. Nobis ut, iure nostrum enim corrupti culpa repellat est totam architecto reiciendis tenetur laudantium, corporis fuga! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum nostrum unde nulla magni delectus. In quidem recusandae maiores reprehenderit odio nesciunt ducimus, sunt repellendus consequatur quam velit, pariatur sed repudiandae?</p>
+</html>

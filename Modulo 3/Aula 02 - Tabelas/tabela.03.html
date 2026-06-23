@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body { 
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        td.num {
+            text-align: right;
+        }
+
+         caption  {
+            font-size: 1.5em ;
+            font-weight: bold;
+            padding: 20px ;
+            background-color: lightgray;
+         }
+
+    </style>
+</head>
+<body>
+    <!--Anatomia de tabels grabdes
+        Table 
+        Caption
+            Thead
+                TR, TD, TH
+            TBODY
+                TR,TD,TH
+            TFOOT
+                TR, TD, TH
+
+       dado -> td
+       titulo -> th 
+    -->
+
+
+    <table>
+        <caption>População em portugal 2026</caption>
+        <thead>
+            <tr>
+                /* mostram o resultado em colunas*/
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+               <td>Lisboa</td> 
+                <td class="num">596,952</td>
+            </tr>
+
+            <tr>
+                <td>Sintra</td>
+                <td class="num">410,420</td>
+            </tr>
+
+            <tr> 
+                <td>Porto</td>
+                <td class="num">264,493</td>
+            </tr>
+
+            <tr> 
+                <td>Cascais</td>
+                <td class="num">228,079</td>
+            </tr>
+
+            <tr> 
+                <td>Loures</td>
+                <td class="num">214,856</td>
+            </tr>
+
+            <tr> 
+                <td>Braga</td>
+                <td class="num">209,328</td>
+            </tr>
+
+            <tr> 
+                <td>Amadora</td>
+                <td class="num">187,541</td>
+            </tr>
+
+            <tr> 
+                <td>Almada</td>
+                <td class="num">187,519</td>
+            </tr>
+
+            <tr> 
+                <td>Matosinhos</td>
+                <td class="num">185,501</td>
+            </tr>
+
+            <tr> 
+                <td>Seixal</td>
+                <td class="num">183,000</td>
+            </tr>
+
+            <tr> 
+                <td>Oeiras</td>
+                <td class="num">181,965</td>
+            </tr>
+
+            <tr> 
+                <td>Gondomar</td>
+                <td class="num">171,928</td>
+            </tr>
+
+            <tr> 
+                <td>Odivelas</td>
+                <td class="num">161,278</td>
+            </tr>
+
+            <tr> 
+                <td>Guimarães</td>
+                <td class="num">156,587</td>
+            </tr>
+
+            <tr> 
+                <td>Coimbra</td>
+                <td class="num">150,409</td>
+            </tr>
+
+            
+        </tbody>
+        <tfoot>
+            <tr>
+                /* o resultado e formado em linhas*/
+                <th scope="row">Total de Habitantes</th>
+                <td class="num">3,489,856</td> 
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
