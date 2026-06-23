@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        tr.destaque {
+            background-color: greenyellow;
+        }
+
+       /* col.nome {
+            background-color: antiquewhite;
+        }
+
+        col.grupo_1 {
+            background-color: aquamarine;
+        }  */
+
+        .amarelo {
+            background-color: antiquewhite;
+        }
+
+        .vermelho {
+            background-color: aquamarine ;
+        }
+    </style>
+</head>
+<body>
+    <table>
+    <!--<colgroup>
+            <col class="nome">
+            <col class="grupo_1" span="3">
+    </colgroup> --> 
+
+    <colgroup>
+        <col class="amarelo">
+        <col class="vermelho" span="2">
+        <col class="amarelo">
+    </colgroup>
+
+        <caption>Registo de utilizadores </caption>
+
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissao</th>
+        </tr>
+        
+    <tr class="destaque">
+        <td>João Silva</td>
+        <td>M</td>
+        <td>32</td>
+        <td>Engenheiro</td>
+    </tr>
+
+    <tr>
+        <td>Maria Costa</td>
+        <td>F</td>
+        <td>28</td>
+        <td>Professora</td>
+    </tr>
+
+    <tr>
+        <td>Pedro Ferreira</td>
+        <td>M</td>
+        <td>41</td>
+        <td>Médico</td>
+    </tr>
+
+    <tr>
+        <td>Sofia Martins</td>
+        <td>F</td>
+        <td>24</td>
+        <td>Designer</td>
+    </tr>
+
+    <tr>
+        <td>Ricardo Oliveira</td>
+        <td>M</td>
+        <td>36</td>
+        <td>Programador</td>
+    </tr>
+
+    <tr>
+        <td>Carla Rodrigues</td>
+        <td>F</td>
+        <td>30</td>
+        <td>Advogada</td>
+    </tr>
+
+    <tr>
+        <td>Tiago Lopes</td>
+        <td>M</td>
+        <td>27</td>
+        <td>Contabilista</td>
+    </tr>
+
+    <tr>
+        <td>Beatriz Gomes</td>
+        <td>F</td>
+        <td>22</td>
+        <td>Estudante</td>
+    </tr>
+
+    <tr>
+        <td>André Sousa</td>
+        <td>M</td>
+        <td>45</td>
+        <td>Arquiteto</td>
+    </tr>
+
+    <tr>
+        <td>Inês Almeida</td>
+        <td>F</td>
+        <td>34</td>
+        <td>Enfermeira</td>
+    </tr>
+
+</body>
+</html>
