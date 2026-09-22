@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Forum Testing</h1>
+
+    <form action="teste.html" method="get">
+        <p>
+            <label for="i-nome">Nome</label>
+            <input type="text" name="nome" required  maxlength="30" placeholder="Nome commpleto" autocomplete="name" required>
+        </p>
+
+        <p>
+            <label for="i-mmedia">Media: </label>
+            <input type="number" name="media" id="i-media" min="0" max="10" required step="0.1" value="5">
+        </p>
+
+        <p>
+            <label for="i-mes">Periodo Letivo</label>
+            <input type="month" name="mes" id="i-mes">
+        </p>
+        <p>
+            <label for="i-dia">Dia do exame : </label>
+            <input type="date" name="dia" id="i-dia">
+        </p>
+        <p>
+            <label for="i-hora">Hora do exame: </label>
+            <input type="time" name="hora" id="i-hora">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
